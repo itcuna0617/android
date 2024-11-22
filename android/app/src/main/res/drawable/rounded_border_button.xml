@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 라운드 처리 -->
+    <corners android:radius="10dp" /> <!-- Radius를 원하는 값으로 설정 -->
+
+    <!-- 배경 색상 -->
+    <solid android:color="#2874A6" /> <!-- 연한 파란색 (#ADD8E6) -->
+
+</shape>
