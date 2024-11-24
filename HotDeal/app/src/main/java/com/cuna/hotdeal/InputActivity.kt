@@ -18,7 +18,8 @@ class InputActivity : AppCompatActivity() {
         setContentView(R.layout.activity_input)
         val confirmButton = findViewById<Button>(R.id.confirmButton)
         val textView = findViewById<TextView>(R.id.textView)
-        val listButton = findViewById<Button>(R.id.homeButton)
+        val listButton = findViewById<Button>(R.id.listButton)
+        val homeButton = findViewById<Button>(R.id.homeButton)
 
         confirmButton.setOnClickListener{
             val editName = findViewById<EditText>(R.id.editName).text.toString()
@@ -54,6 +55,11 @@ class InputActivity : AppCompatActivity() {
 
         listButton.setOnClickListener{
             val intent = Intent(applicationContext, ResultActivity::class.java)
+            startActivity(intent)
+        }
+
+        homeButton.setOnClickListener{
+            val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
         }
     }
