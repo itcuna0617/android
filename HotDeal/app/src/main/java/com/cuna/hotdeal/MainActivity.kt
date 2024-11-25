@@ -13,14 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Singleton으로 Product 설정
-        ProductManager.addOrUpdateProduct(name = "Laptop", price = 1500)
-
-        // Singleton에서 Product 가져오기
-        val product = ProductManager.getProductByName("Laptop")
-        product?.let {
-            println("Product Name: ${it.name}, Price: ${it.price}")
-        } ?: println("Product not found")
+//        // Singleton으로 Product 설정
+//        ProductManager.addOrUpdateProduct(name = "Laptop", price = 1500)
+//
+//        // Singleton에서 Product 가져오기
+//        val product = ProductManager.getProductByName("Laptop")
+//        product?.let {
+//            println("Product Name: ${it.name}, Price: ${it.price}")
+//        } ?: println("Product not found")
 
         val newButton = findViewById<Button>(R.id.NewButton)
         val listButton = findViewById<Button>(R.id.ListButton)
