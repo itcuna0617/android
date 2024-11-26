@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showBasicAlert(success: Boolean){
-        val builder = AlertDialog.Builder(t ㄷhis)
+        val builder = AlertDialog.Builder(this)
 
         if(success == true){
             builder.setTitle("성공! 보물을 찾았어요!!")
