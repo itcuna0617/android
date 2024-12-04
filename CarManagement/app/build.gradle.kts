@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.songjang.carmanagement"
-        minSdk = 35
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -42,6 +42,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.play.services.maps)
+    implementation(libs.androidx.library)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,4 +70,8 @@ dependencies {
     // 글라이드
     implementation("com.github.bumptech.glide:glide:4.15.1")
     annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
+
+    // 네이버 지도 SDK
+    implementation("com.naver.maps:map-sdk:3.20.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 }
