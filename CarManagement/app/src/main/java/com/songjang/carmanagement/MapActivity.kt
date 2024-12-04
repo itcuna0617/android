@@ -170,15 +170,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         return dp[s1.length][s2.length]
     }
 
-//    private fun showAddressList(addresses: List<Address>) {
-//        searchResultRecyclerView.visibility = View.VISIBLE // 검색 결과 표시
-//        searchResultRecyclerView.layoutManager = LinearLayoutManager(this)
-//        searchResultRecyclerView.adapter = AddressAdapter(addresses) { address ->
-//            // 사용자가 항목 선택 시
-//            showAddressOnMap(address)
-//            searchResultRecyclerView.visibility = View.GONE // 리스트 닫기
-//        }
-//    }
 private fun showAddressList(places: List<Address>) {
     searchResultRecyclerView.visibility = View.VISIBLE // 검색 결과 표시
     searchResultRecyclerView.layoutManager = LinearLayoutManager(this)
